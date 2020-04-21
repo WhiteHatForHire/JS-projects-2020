@@ -4,43 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sound Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <div class="rave">One</div>
-    <div class="raga">Two</div>
-    <div class="candle">Three</div>
+    <div class="container">
 
+        <div class="sound rave">Rave</div>
+        <div class="sound raga">Raga</div>
+        <div class="sound candle">Candle</div>
+        
+    </div>
     <script>
 
-        const stopButton = document.querySelector("#stopButton");
-        const raveButton = document.querySelector("#raveButton");
-        const ragaButton = document.querySelector("#ragaButton");
-        const candleButton = document.querySelector("#candleButton");
-
-        const rave = new Audio('sound/rave.mp3');
-        const raga = new Audio('sound/raga.mp3');
-        const candle = new Audio('sound/candle.mp3');
-
-        
-
-        raveButton.addEventListener('click', function() {
-            rave.play();
-        });
-
-        ragaButton.addEventListener('click', function() {
-            raga.play();
-        });
-
-        candleButton.addEventListener('click', function() {
-            candle.play();
-        });
-
-        stopButton.addEventListener('click', function() {
-            rave.pause();
-            raga.pause();
-            candle.pause();
-        });
+ 
+    
     </script>
+
     
 </body>
 </html>
